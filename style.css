@@ -1,264 +1,260 @@
 :root {
-    --d4-blend: linear-gradient(90deg, rgba(113, 14, 108, 0.7) 0%,
-        rgba(120, 18, 196, 0.7) 55%, rgba(28, 17, 103, 0.7) 93%);
-  
-    --ri4-blend: linear-gradient(0deg, rgb(226, 153, 174) 0%,
-        rgb(231, 211, 201) 31%, rgb(230, 203, 150) 44%,
-        rgba(155, 62, 76, 1) 100%);
-  
-    --d4-dark: rgba(28, 17, 103, 0.7);
-    --ri4-dark: rgb(155, 62, 76);
-  
-    --bg: var(--d4-blend);
-  }
-  
-  body {
-    background: var(--bg);
-    line-height: 1.7;
-    font-family: Noto Sans, Arial;
-    margin: 0;
-  }
-  
-  p, h2, h3 {
-    color: rgb(221, 221, 221);
-    margin: 0;
-  }
-  
-  p {
-    font-size: 1.05rem;
-  }
+  --d4-blend: linear-gradient(90deg, rgba(113, 14, 108, 0.7) 0%,
+      rgba(120, 18, 196, 0.7) 55%, rgba(28, 17, 103, 0.7) 93%);
 
-  h2 {
-    margin-bottom: 0.6rem;
-  }
-  
-  h3 {
-    color: bisque;
-    font-weight: 400;
-    font-size: 1.1rem;
-  }
-  
-  audio {
-    height: 2.5rem;
-    width: 15rem;
-    margin-top: 1rem;
-  }
-  
-  .dropdown,
-  .hint {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .dropdown{
-    margin-right: 3rem;
-  }
-  
-  .dropdown-options>fieldset {
-    border: 0;
-    border-radius: 0 0 1rem 1rem;
-    padding: 0 1.5rem;
-  }
-  
-  .theme-selector input[type="radio"] {
-    appearance: none;
-    display: inline;
-    margin-left: 1rem;
-    width: 2.3rem;
-    height: 2.3rem;
-    border: 3px solid var(--radio-color, currentColor);
-    border-radius: 50%;
-    background-clip: content-box;
-    padding: 0.2rem;
-  }
-  
-  .theme-button {
-    border: none;
-    background: rgba(48, 43, 43, 0.4);
-    font-family: Noto Sans;
-    font-size: 1rem;
-    color: white;
-    border-radius: 0.3rem;
-    padding: 1rem 1.5rem;
-    cursor: pointer;
-  }
-  
-  .down {
-    font-size: 0.8rem;
-    margin-left: 0.2rem;
-  }
-  
-  .dropdown-options {
-    display: none;
-    position: absolute;
-    overflow: auto;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 0 0 5px 5px;
-  }
-  
-  .dropdown:hover .dropdown-options {
-    display: block;
-  }
-  
-  .opt {
-    display: flex;
-    line-height: 3rem;
-    margin: 0.5rem 0;
-  }
-  
-  .theme-selector input[type="radio"]:checked {
-    background-color: var(--radio-color);
-  }
-  
-  .theme-selector input[type="radio"]#d4 {
-    --radio-color: var(--d4-dark);
-  }
-  
-  .theme-selector input[type="radio"]#ri4 {
-    --radio-color: var(--ri4-dark);
-  }
-  
-  :root:has(#ri4:checked) {
-    --bg: var(--ri4-blend);
-  }
-  
-  .logo {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-  
-  .event-logo {
-    padding: 10px;
-    width: 370px;
-  }
-  
-  .dialogue-box {
-    display: flex;
-    flex-direction: row;
-    padding: 25px;
-    justify-content: center;
-  }
-  
-  .pfp {
-    width: 100%;
-    border-radius: 50%;
-  }
-  
-  .pfp-box {
-    margin-right: 15px;
-    width: 60px;
-    min-width: 50px;
-  }
-  
-  .q-box {
-    flex: 1;
-    border-radius: 15px;
-    padding: 1rem;
-    transition: background-color 0.3s;
-    background-color: rgba(48, 43, 43, 0.4);
-    max-width: 700px;
-  }
-  
-  .q-box:hover {
-    background-color: rgba(10, 10, 10, 0.5);
-  }
-  
-  .username {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: aliceblue;
-  }
-  
-  .usertag {
-    font-size: 16px;
-    color: rgb(221, 221, 221);
-    font-weight: 400;
-    margin-left: 5px;
-  }
-  
-  .unit-icon {
-    height: 25px;
-  }
-  
-  .rumi-sign,
-  .airi-sign {
-    height: 90px;
-  }
+  --ri4-blend: linear-gradient(0deg, rgb(226, 153, 174) 0%,
+      rgb(231, 211, 201) 31%, rgb(230, 203, 150) 44%,
+      rgba(155, 62, 76, 1) 100%);
 
-  .miigo-sign {
-    height: 80px;
-  }
+  --d4-dark: rgba(28, 17, 103, 0.7);
+  --ri4-dark: rgb(155, 62, 76);
+
+  --bg: var(--d4-blend);
+}
+
+body {
+  background: var(--bg);
+  line-height: 1.5;
+  font-family: Noto Sans, Arial;
+  margin: 0;
+}
+
+p, h2, h3 {
+  color: rgb(221, 221, 221);
+  margin: 0;
+}
+
+p {
+  font-size: 1.05rem;
+}
+
+h2 {
+  margin-bottom: 0.6rem;
+}
+
+h3 {
+  color: bisque;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+audio {
+  height: 2.5rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.dropdown,
+.hint {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dropdown{
+  margin-right: 3rem;
+}
+
+.dropdown-options>fieldset {
+  border: 0;
+  border-radius: 0 0 1rem 1rem;
+  padding: 0 1.5rem;
+}
+
+.theme-selector input[type="radio"] {
+  appearance: none;
+  display: inline;
+  margin-left: 1rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 3px solid var(--radio-color, currentColor);
+  border-radius: 50%;
+  background-clip: content-box;
+  padding: 0.2rem;
+}
+
+.theme-button {
+  border: none;
+  background: rgba(48, 43, 43, 0.4);
+  font-family: Noto Sans;
+  font-size: 1rem;
+  color: white;
+  border-radius: 0.3rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+
+.down {
+  font-size: 0.8rem;
+  margin-left: 0.2rem;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 0 0 5px 5px;
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+}
+
+.opt {
+  display: flex;
+  line-height: 3rem;
+  margin: 0.5rem 0;
+}
+
+.theme-selector input[type="radio"]:checked {
+  background-color: var(--radio-color);
+}
+
+.theme-selector input[type="radio"]#d4 {
+  --radio-color: var(--d4-dark);
+}
+
+.theme-selector input[type="radio"]#ri4 {
+  --radio-color: var(--ri4-dark);
+}
+
+:root:has(#ri4:checked) {
+  --bg: var(--ri4-blend);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.event-logo {
+  padding: 10px;
+  width: 370px;
+}
+
+.dialogue-box {
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  justify-content: center;
+}
+
+.pfp {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.pfp-box {
+  margin-right: 15px;
+  width: 60px;
+  min-width: 50px;
+}
+
+.q-box {
+  flex: 1;
+  border-radius: 15px;
+  padding: 1rem;
+  transition: background-color 0.3s;
+  background-color: rgba(48, 43, 43, 0.4);
+  max-width: 700px;
+}
+
+.q-box:hover {
+  background-color: rgba(10, 10, 10, 0.5);
+}
+
+.username {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+
+.usertag {
+  font-size: 16px;
+  color: rgb(221, 221, 221);
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.unit-icon {
+  height: 25px;
+}
+
+.sign {
+  height: 100px;
+}
+
+.ans {
+  padding: 0.8rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-family: Noto Sans;
+  border: solid 0.17rem white;
+  background: none;
+  cursor: pointer;
+  color: rgb(221, 221, 221);
+  transition: transform 0.15s;
+}
+
+.ans:hover{
+  transform: perspective(0.2rem) scale3d(1.044, 1.044, 1) translateZ(0);
+}
+
+.instructions {
+  margin-top: 1rem;
+}
+
+.audio-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 1rem;
+  justify-content: space-between;
+}
+
+.end {
+  background-color: rgba(238, 230, 230, 0.6);
+  margin: 10px auto;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.end-message {
+  font-size: 0.85rem;
+  color: black;
+}
+
+.footer {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(81, 65, 65, 0.6);
+  padding: 2rem 2rem 3rem 3rem;
+  justify-content: center;
+  gap: 3rem;
+}
   
-  .ans {
-    padding: 0.8rem;
-    border-radius: 1rem;
-    font-size: 1rem;
-    font-family: Noto Sans;
-    border: solid 0.17rem white;
-    background: none;
-    cursor: pointer;
-    color: rgb(221, 221, 221);
-    transition: transform 0.15s;
-  }
-  
-  .ans:hover{
-    transform: perspective(0.2rem) scale3d(1.044, 1.044, 1) translateZ(0);
-  }
-  
-  .instructions {
-    margin-top: 1rem;
-  }
-  
-  .audio-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .end {
-    background-color: rgba(238, 230, 230, 0.6);
-    margin: 10px auto;
-    width: fit-content;
-    border-radius: 10px;
-    padding: 0.5rem;
-  }
-  
-  .end-message {
-    font-size: 0.85rem;
-    color: black;
-  }
-  
-  .footer {
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(81, 65, 65, 0.6);
-    padding: 2rem 2rem 3rem 3rem;
-    justify-content: center;
-    gap: 3rem;
-  }
-  
-  .footer-text {
-    flex: 1;
-    max-width: 500px;
-  }
-  
-  .server-link {
-    color: bisque;
-  }
-  
-  .long-audio {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4.5rem;
-    margin-left: 1rem;
-  }
-  
-  .long-clip {
-    margin-top: 1rem;
-  }
-  
+
+.footer-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.server-link {
+  color: bisque;
+}
+
+.long-audio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4.5rem;
+  margin-left: 1rem;
+}
+
+.long-clip {
+  margin-top: 1rem;
+}
